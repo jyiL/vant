@@ -70,6 +70,7 @@ export default {
         condition: '无使用门槛\n最多优惠12元',
         reason: '',
         value: 150,
+        tag: 'xxxx',
         name: this.t('coupon.name'),
         description: this.t('coupon.description'),
         startAt: 1489104000,
