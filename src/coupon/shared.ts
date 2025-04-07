@@ -1,5 +1,6 @@
 export type Coupon = {
   id: string;
+  tag: string;
   name: string;
   endAt: number;
   value: number;
