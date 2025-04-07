@@ -64,7 +64,18 @@
     border-radius: 0 @coupon-border-radius @coupon-border-radius 0;
   }
 
+  &__tag {
+    display: -webkit-box;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  &__tag-name {
+    margin-right: 10px;
+  }
+
   &__name {
+    margin-top: 3px;
     margin-bottom: 10px;
     font-weight: bold;
     font-size: @coupon-name-font-size;
