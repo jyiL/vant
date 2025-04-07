@@ -40,6 +40,6 @@ jobs:
         with:
           branch: main
           folder: site
-          token: ${{ secrets.VANT_UI_TOKEN }}
+          token: ${{ secrets.NPM_PUBLISH }}
           repository-name: vant-ui/vant-ui.github.io
           target-folder: vant/v2
