@@ -2,6 +2,7 @@ import { createNamespace } from '../utils';
 import { RED } from '../utils/constant';
 import { padZero } from '../utils/format/string';
 import Checkbox from '../checkbox';
+import Tag from '../tag';
 
 const [createComponent, bem, t] = createNamespace('coupon');
 
@@ -86,7 +87,12 @@ export default createComponent({
             </p>
           </div>
           <div class={bem('body')}>
-            <p class={bem('name')}>{coupon.name}</p>
+            <div class={bem('tag')}>
+              <Tag plain type="danger" round class={bem('tag-name')}>
+                {coupon.tag}
+              </Tag>
+              <p class={bem('name')}>{coupon.name}</p>
+            </div>
             <p class={bem('valid')}>{this.validPeriod}</p>
             {!this.disabled && (
               <Checkbox
